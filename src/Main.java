@@ -60,12 +60,39 @@ public class Main {
         int totalClass = totalCans / totalCansPerClass;
         int totalWhiteCans = totalClass * whiteCansPerClass;
         int totalBrownCans = totalClass * brownCansPerClass;
-        System.out.println("В школе, где " + totalClass + " классов, нужно " + totalWhiteCans + " банок белой краски и "
-         + totalBrownCans + " банок коричневой краски");
+        System.out.println("В школе, где " + totalClass + " классов, нужно " + totalWhiteCans +
+                " банок белой краски и " + totalBrownCans + " банок коричневой краски");
 
+        int bananasWeight = 80;
+        int totalBananas = 5;
+        int milkVol = 200;
+        float milkWeight = (float) (milkVol * 1.05);
+        int iceCreamWeight = 100;
+        int totalIceCream = 2;
+        int eggsWeight = 70;
+        int totalEggs = 4;
+        float totalBreakfastWeight = bananasWeight * totalBananas + milkWeight + iceCreamWeight * totalIceCream +
+                eggsWeight * totalEggs;
+        int grPerKg = 1000;
+        float totalBreakfastWeightKg = totalBreakfastWeight / grPerKg;
+        System.out.println("Вес спортзавтрака составляет " + totalBreakfastWeight +
+                " грамм (" + totalBreakfastWeightKg + " кг)");
 
+        int excessWeightKg = 7;
+        int excessWeight = excessWeightKg * grPerKg;
+        int dailyWeightLossOne = 250;
+        int dailyWeightLossTwo = 500;
+        int daysOne = excessWeight / dailyWeightLossOne;
+        int daysTwo = excessWeight / dailyWeightLossTwo;
+        int daysAverage = (daysOne + daysTwo) / 2;
+        System.out.println("При ежедневной потере в 250 грамм потребуется " + daysOne +
+                " дней, при потере в 500 грамм - " + daysTwo + " дней. В среднем потребуется " + daysAverage +
+                " день на похудение" + "\n");
 
-
+        int salaryPerMonthMasha = 67760;
+        int salaryPerMonthDenis = 83690;
+        int salaryPerMonthKristina = 76230;
+        float newSalaryPerMonthMasha = (float) (salaryPerMonthMasha * 1.1);
 
     }
 }
